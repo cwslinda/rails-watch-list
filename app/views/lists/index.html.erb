@@ -29,8 +29,8 @@
       <div class="co-12 colsm-6 col-md-4 mb-3">
         <div class="bg-white rounded shadow h-100" img src="https://source.unsplash.com/random">
           <%= link_to list_path(list), class:'text-decoration-none' do %>
+          <%= cl_image_tag list.photo.key, height: 300, width: 290, crop: :fill %><%= list.name %>
             <div class="p-3 rounded-bottom d-flex flex-column">
-            <%= list.name %>
             </div>
           <% end %>
         </div>
@@ -38,7 +38,3 @@
     <% end %>
   </div>
 </div>
-
-
-<%= cl_image_tag("https://res.cloudinary.com/dnwps7mca/image/upload/v1637898101/hafmapyrz7beod7f8dst.jpg",
-      width: 150, height: 150, crop: :thumb, gravity: :face) %>
