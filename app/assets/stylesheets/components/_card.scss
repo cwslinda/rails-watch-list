@@ -56,9 +56,9 @@
 
 .card-product {
   overflow: hidden;
-  height: 120px;
+  height: 150px;
   background: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
 }
@@ -80,9 +80,15 @@
   line-height: 1.4;
   opacity: 0.7;
   margin-bottom: 0;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .card-product .card-product-infos {
-  padding: 16px;
+  padding: 14px;
+  margin-top: 8px;
+}
+
+.fa-trash {
+  font-size: 14px;
+  margin-top: 8px;
 }
